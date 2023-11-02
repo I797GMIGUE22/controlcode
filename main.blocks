@@ -1,0 +1,67 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="5$*?*.A.S]7SB(]6s^KO" x="0" y="0"><statement name="HANDLER"><block type="device_show_leds" id="Uvz}Mt4l5D-UqZdT|F=h"><field name="LEDS">`
+        . # . # . 
+        # # # # # 
+        # # # # # 
+        . # # # . 
+        . . # . .
+        `</field><next><block type="radio_set_group" id="Kc29C88Nk$yheB,Bx}Y:"><value name="ID"><shadow type="math_number_minmax" id="+RpDs#v71CK+w+6Yl.um"><mutation min="0" max="255" label="Id" precision="0"></mutation><field name="SLIDER">1</field></shadow></value><next><block type="radio_set_transmit_power" id="Yr/CV$!JXl9WS3glg(hI"><value name="power"><shadow type="math_number_minmax" id="56GRX,lc1J%K8}JkXy^g"><mutation min="0" max="7" label="Power" precision="0"></mutation><field name="SLIDER">7</field></shadow></value></block></next></block></next></block></statement></block><block type="device_forever" id="h+}F$`SPE9d(NW^15`Zq" x="327" y="9"><statement name="HANDLER"><block type="controls_if" id="9.vOuQO(m{3`-rm=6Le{"><mutation elseif="3"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="GHBit_Button" id="c)qIi@)u7i!ot[@~/.^G"><field name="num">GHBit.enButton.B1</field><field name="value">GHBit.enButtonState.Press</field></block></value><statement name="DO0"><block type="radio_datagram_send_string" id="p17a7+~0Eg};[Jq|~e2a"><value name="msg"><shadow type="text" id="!YU@5[;KX9UG$)/37zZ*"><field name="TEXT">E</field></shadow></value><next><block type="device_show_leds" id="zT]_X`/,wP=?Cn3zc[c["><field name="LEDS">`
+        . . . . . 
+        . . # . . 
+        # . # . # 
+        # # # # # 
+        # # # # #
+        `</field></block></next></block></statement><value name="IF1"><block type="GHBit_Button" id="[ek^dyUoXcYG}8*5$(Xk"><field name="num">GHBit.enButton.B2</field><field name="value">GHBit.enButtonState.Press</field></block></value><statement name="DO1"><block type="radio_datagram_send_string" id="Uz!`g$m~.IE3~y(fmpV6"><value name="msg"><shadow type="text" id="435S9QQC!WTn5J!kq|Mq"><field name="TEXT">F</field></shadow></value><next><block type="device_show_leds" id="Z/)?W|_/9n%fG*QO~_.:"><field name="LEDS">`
+        . # . # . 
+        # # . . # 
+        # # . # . 
+        # # . . # 
+        . # . # .
+        `</field></block></next></block></statement><value name="IF2"><block type="GHBit_Button" id="Cmiy77$hn-ohNIv]2|#O"><field name="num">GHBit.enButton.B3</field><field name="value">GHBit.enButtonState.Press</field></block></value><statement name="DO2"><block type="radio_datagram_send_string" id="aybxK(_adxIFGGoyY_]U"><value name="msg"><shadow type="text" id="|a?yiF*3vr@3_Fdqc{t*"><field name="TEXT">G</field></shadow></value><next><block type="device_show_leds" id="YM9H]Lo3ViN{(-b#MF(P"><field name="LEDS">`
+        . # . # . 
+        . . . . . 
+        . # # # . 
+        # . . . # 
+        # . . . #
+        `</field></block></next></block></statement><value name="IF3"><block type="GHBit_Button" id="VgNKIeQIGFTrIwt;!,S,"><field name="num">GHBit.enButton.B4</field><field name="value">GHBit.enButtonState.Press</field></block></value><statement name="DO3"><block type="radio_datagram_send_string" id="LErRs2o%a^;y+shxRTb0"><value name="msg"><shadow type="text" id="eI9+he|/J5P+:jN@-5{N"><field name="TEXT">B</field></shadow></value><next><block type="device_show_leds" id="@t^KkBtl:`SFnNdVY*Xf"><field name="LEDS">`
+        . . # . . 
+        . . # . . 
+        # . # . # 
+        . # # # . 
+        . . # . .
+        `</field></block></next></block></statement><next><block type="controls_if" id="#3he!e*^m}O+-b$pRN~9"><mutation elseif="5"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="GHBit_Rocker" id="=G0Mh.H9MSqmVm,sJY-F"><field name="value">GHBit.enRocker.Up</field></block></value><statement name="DO0"><block type="radio_datagram_send_string" id="j0RzNL?gbT!(6}SWhD{8"><value name="msg"><shadow type="text" id="*AXT$W^`/C8r=Vk_:6r*"><field name="TEXT">A</field></shadow></value><next><block type="device_show_leds" id="MY#-%FI(QY]]T87d-ib("><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # . # . # 
+        . . # . . 
+        . . # . .
+        `</field></block></next></block></statement><value name="IF1"><block type="GHBit_Rocker" id="Y9Vdm!h4jv_s8Y8f^3s_"><field name="value">GHBit.enRocker.Down</field></block></value><statement name="DO1"><block type="radio_datagram_send_string" id=",Wx]6~BHH[Usb0`tM@d}"><value name="msg"><shadow type="text" id="o6d$;VdqZ%|Ht(SUIorC"><field name="TEXT"></field></shadow></value><next><block type="device_show_leds" id="ko:@WV/S!QZd7XF()gp:"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # # # # # 
+        . # # # . 
+        . . # . .
+        `</field></block></next></block></statement><value name="IF2"><block type="GHBit_Rocker" id="J7/2xC@|E?jIAT=s%pj#"><field name="value">GHBit.enRocker.Left</field></block></value><statement name="DO2"><block type="radio_datagram_send_string" id="kT)Ntp%*c$#qPtGkXZ0g"><value name="msg"><shadow type="text" id="S%g4]U0b;B#)u!?m!6Z%"><field name="TEXT">C</field></shadow></value><next><block type="device_show_leds" id=";~K}WmK2*8W0Mk9%hx-~"><field name="LEDS">`
+        . . # . . 
+        . # . . . 
+        # # # # # 
+        . # . . . 
+        . . # . .
+        `</field></block></next></block></statement><value name="IF3"><block type="GHBit_Rocker" id="#O=]0q[;o]9Jo#8^Q$Tn"><field name="value">GHBit.enRocker.Right</field></block></value><statement name="DO3"><block type="radio_datagram_send_string" id="ygn#Vc1PTK.:0y6!N0;2"><value name="msg"><shadow type="text" id="3SC=mITs4~R2e?_mQt?8"><field name="TEXT">D</field></shadow></value><next><block type="device_show_leds" id="(R$UAfMF5dK-ma@ho-0m"><field name="LEDS">`
+        . . # . . 
+        . . . # . 
+        # # # # # 
+        . . . # . 
+        . . # . .
+        `</field></block></next></block></statement><value name="IF4"><block type="GHBit_Rocker" id="A*@cj*RtaoCy(gD+B=-)"><field name="value">GHBit.enRocker.Press</field></block></value><statement name="DO4"><block type="radio_datagram_send_string" id="p[bj/ELSxgyykErBTZqz"><value name="msg"><shadow type="text" id="MTN/Ny;9ag%6TrIXXbt%"><field name="TEXT">I</field></shadow></value><next><block type="device_show_leds" id="nN98`Mx$**/d3.i_hnxo"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        . . . . .
+        `</field></block></next></block></statement><value name="IF5"><block type="GHBit_Rocker" id="Pw)N5+mYKIf;IvrPaU$D"><field name="value">GHBit.enRocker.Nostate</field></block></value><statement name="DO5"><block type="radio_datagram_send_string" id="Tx#1P)?A:nj)SvO-$%hi"><value name="msg"><shadow type="text" id="vskfjD9S[b*z+7u8lyl."><field name="TEXT"></field></shadow></value><next><block type="device_show_leds" id="1)Fc]%epSnL[,I9Q{D-A"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # # # # # 
+        . # # # . 
+        . . # . .
+        `</field></block></next></block></statement></block></next></block></statement></block></xml>
